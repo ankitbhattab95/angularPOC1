@@ -1,0 +1,19 @@
+h1{
+    padding-left: 10px;
+    text-decoration: underline;
+    margin-top: 50px;
+
+}
+#table,#toggle{
+    width: 500px;
+    padding-left: 50px;
+}
+thead{
+    background-color: rgb(124, 175, 175);
+}
+p{
+    font-size: 20px;
+}
+#toggle{
+    margin-top:100px;
+}

@@ -1,0 +1,30 @@
+<h1>User Details</h1>
+<div id="table" >
+        <table class="table table-bordered" >
+                <thead>
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>     
+                  </tr>
+                </thead>
+                <tbody *ngFor="let user of userArray">
+                  <tr>
+                    <td>{{user.name}}</td>
+                    <td>{{user.age}}</td>
+                </tbody>
+        </table>
+ </div>       
+ <div id="toggle" >
+        <p>
+            Click the button to toggle content using ngIf
+        </p>
+        <button class="btn btn-success" (click)="flagClicked()">Flag</button>
+        
+        <div  *ngIf="flag === true else elsePart">
+            <h3> This is the "If" part of ngIf</h3>
+        </div>
+        
+        <ng-template #elsePart>
+            <h3>This is the "else" part of *ngIf</h3>
+        </ng-template>
+</div>
